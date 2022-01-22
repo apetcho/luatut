@@ -11,7 +11,7 @@ print("y is", y)
 ---------------------------------
 -- local and global variables ---
 ---------------------------------
-function sum_numbers(n)
+local function sum_numbers(n)
     local sum = 0
     for i = 1, n do
         sum = sum + i
@@ -32,3 +32,4 @@ local hello = "Hello"
 if starts_with(text, hello) then
     print("GoodBye!")
 end
+
