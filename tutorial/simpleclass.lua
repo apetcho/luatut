@@ -22,3 +22,8 @@ end
 function MyClass.set_value(self, newval)
     self.value = newval
 end
+
+--
+function MyClass.get_value(self)
+    return self.value
+end
