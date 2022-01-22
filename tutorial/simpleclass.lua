@@ -27,3 +27,9 @@ end
 function MyClass.get_value(self)
     return self.value
 end
+
+--- Test
+local obj = MyClass.new(5)
+print(obj:get_value())
+obj.set_value(obj, 6)
+print(obj.get_value(obj))
