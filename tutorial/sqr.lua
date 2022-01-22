@@ -1,5 +1,5 @@
 -- sqr.lua
-function sqr(x)
+local function sqr(x)
     print("x is", x)
     return x * x
 end
@@ -22,3 +22,13 @@ end
 local result = sum_numbers(10)
 io.write("result = ", result)
 print()
+
+--
+local function starts_with(str, sub)
+    return string.find(str, sub) == 0
+end
+local text = "Hello Lua. A cool little programming language"
+local hello = "Hello"
+if starts_with(text, hello) then
+    print("GoodBye!")
+end
