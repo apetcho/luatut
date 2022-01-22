@@ -17,3 +17,8 @@ function MyClass.new(init)
     self.value = init
     return self
 end
+
+-- 
+function MyClass.set_value(self, newval)
+    self.value = newval
+end
